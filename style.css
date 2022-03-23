@@ -1,0 +1,293 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    width: 100%;
+    height: 550px;
+    background: url("sky1.jpg");
+    background-size: cover;
+    background-position: center ;
+}
+.unOrderedList{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    list-style: none;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+.unOrderedList li img{
+    width:80px;
+    height: 80px;
+}
+.unOrderedList li a{
+    text-decoration: none;
+    color: inherit;
+}
+.lastList{  
+    padding: 10px 20px 10px 20px;
+    color: white;
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+h1{
+    font-size: 60px;
+    margin-left:10%;
+    font-family: sans-serif;
+     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px rgb(23, 26, 27); 
+    text-transform: uppercase;
+}
+.firstParagraph{
+    font-family:monospace;
+    font-size: 15px;
+    margin-left:10%;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke:white; 
+    color: white;
+}
+.overall{
+    width:200px ;
+    height:40px ;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+.overall button{
+    border: 0px;
+    color: white;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+.nav1{
+    width: 100px;
+    height: 40px;
+    background-color: rgba(154, 205, 50,.8);
+    margin-right: 10px;
+}
+.nav2{
+    width: 150px;
+    height: 40px;
+    background-color: rgba(248, 84, 19,.8);
+    color: white; 
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+h3{
+    font-size: 30px;
+    color: white;
+}
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    float: right;
+    width:300px;
+    height: 400px;
+    background-color: rgba(198, 248, 19, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: monospace;
+ }
+ .login>input{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid rgba(198, 248, 19, 0.8); 
+    border-radius: 15px;
+    text-align: center;
+}
+.login input:hover{
+    width: 250px;
+    height: 35px;
+}
+.login button{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: 1px solid   rgba(250, 149, 109, 0.8);
+    border-radius: 15px;
+    background-color: rgba(248, 84, 19,.8);
+}
+.login button:hover{
+    width: 140px;
+}
+.firstArticleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("Group 39709.png") ;
+    background-repeat: no-repeat;
+    background-position: 200px 100px;
+}
+.articleContainer{
+    margin-top: 150px;
+    display: flex; 
+}
+.articleContainer article{
+    width:200px;
+    height: 270px;
+    padding: 20px 20px 0px 20px;
+    margin:0px 30px 0px 0px ;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    text-align: justify;
+    font-family:sans-serif;
+    box-shadow: 0px 10px 15px rgba(26, 25, 25, .7);
+    background-size: cover;
+}
+.articleContainer article h3{
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.articleContainer article button{
+    border: 0px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgba(198, 248, 19, 0.8);
+}
+.articleContainer .articleOne{
+    background-image: url("rose.jpg");
+    color: white;
+}
+.articleContainer .articleTwo{
+    background-image: url("rice.jpg");
+    color: black;
+}
+.articleContainer .articleThree{
+    background-image: url("wheat.jpg");
+    color: black;
+}
+section{
+    margin:20px 20% 0px 20%;
+    padding: 10px;
+    font-size: 13px;
+    font-family: Verdana;
+}
+section div{
+    float: left;
+    width:50%
+}
+section img{
+    width:300px;
+    height: 300px;
+    margin-right: 10%;
+    box-shadow: 0px 10px 10px 0px rgba(150, 145, 145,0.8);
+}
+section div h2{
+    font-size: 30px;
+}
+section div p span{
+    color:orange;
+    font-size:18px ;
+}
+section div button{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    color: white;
+    border: none;
+}
+figure{
+    position: relative;
+    float: right;
+}
+.content{
+    position: absolute;
+    width:100%;
+    height:0%;
+    top: 0%;
+    background: lightskyblue;
+    transition: 2s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font: 20px monospace;
+}
+.firstSection:hover .content{
+    height: 100%;
+    opacity: 1;  
+    color: white;   
+}
+
+@media (max-width:800px) {
+    .container{
+        background-image: url("sky.jpg");
+    }
+    .unOrderedList{
+        width: 95%;
+        margin-left: 7px;
+        margin-right: 10px;
+    }
+    .unOrderedList li{
+        font-size:11px;
+    }
+    .unOrderedList li img{
+        width: 40px;
+        height: 40px;
+    }
+    .lastList{  
+        padding: 5px 10px 5px 10px;
+    }
+    .overall{
+        margin-left: 20%;
+    }
+     .login{
+         position: static;
+         margin-top: 100px;
+    }
+    .logo{
+        position: static;
+    } 
+    .firstArticleContainer{
+        background-position: top left;
+    }
+    .articleContainer{
+        margin-top: 60px;
+        align-items: center; 
+        flex-direction: column;
+    }
+    .articleContainer article{
+        width:250px; 
+        margin:0px 0px 30px 0px;
+    }
+    .articleContainer article h3{
+        padding-bottom: 20px;
+    }
+    section{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        margin:20px 10% 0px 10%;
+        border: 1px solid orange;
+    }
+    section div{
+        width: 100%;
+    }
+    section img{
+        float: none;
+        width: 100%;
+        margin-right: 0px;  
+        object-fit: contain;
+    }
+    
+}
